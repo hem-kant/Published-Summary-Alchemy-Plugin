@@ -1,0 +1,4 @@
+C:\Users\cb-in\Documents\Personal\Hack\PublishedSummary\PublishedSummary.Models\bin\Debug\PublishedSummary.Models.dll
+C:\Users\cb-in\Documents\Personal\Hack\PublishedSummary\PublishedSummary.Models\bin\Debug\PublishedSummary.Models.pdb
+C:\Users\cb-in\Documents\Personal\Hack\PublishedSummary\PublishedSummary.Models\obj\Debug\PublishedSummary.Models.dll
+C:\Users\cb-in\Documents\Personal\Hack\PublishedSummary\PublishedSummary.Models\obj\Debug\PublishedSummary.Models.pdb

@@ -1,0 +1,12 @@
+
+.contextmenu #pub_summary_cm > .image {
+    background-image: url('/WebUI/Editors/Alchemy/Plugins/Published_Summary/assets/img/published-summary-icon-16x16.png');
+}
+
+.ribbontoolbar #PublishedSummaryButton.button .image, .ribbontoolbar #PublishedSummaryButton.button .image {
+    background-image: url('/WebUI/Editors/Alchemy/Plugins/Published_Summary/assets/img/published-summary-icon-32x32.png');
+}
+
+.ribbontoolbar.minimized #PublishedSummaryButton.button .image, .ribbontoolbar.minimized #PublishedSummaryButton.button .image {
+    background-image: url('/WebUI/Editors/Alchemy/Plugins/Published_Summary/assets/img/published-summary-icon-16x16.png');
+}

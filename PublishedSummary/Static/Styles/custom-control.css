@@ -1,0 +1,251 @@
+
+#pub-summary .position-wrapper {
+    position: absolute;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #d0d0d0;
+    background-image: none;
+    font-family: Verdana;
+}
+
+#pub-summary .textbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #d0d0d0;
+    background-image: none;
+    font-family: Verdana;
+    height: 25px;
+    margin-top:10px;
+}
+/* Custom Select */
+#pub-summary .select {
+    position: relative;
+    display: block;
+    /*width: 12em;*/
+    height: 30px;
+    line-height: 2;
+    background: #d0d0d0;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #d0d0d0;
+	font-size:12px;
+}
+
+#pub-summary select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 5px;
+    color: #867d79;
+    cursor: pointer;
+}
+
+    #pub-summary select::-ms-expand {
+        display: none;
+    }
+/* Arrow */
+#pub-summary .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 5px;
+    background: #867d79;
+    pointer-events: none;
+}
+/* Transition */
+#pub-summary .select:hover::after {
+    color: white;
+}
+
+#pub-summary .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+
+
+/* The checkbox-container */
+#pub-summary .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 12px;
+	
+	font-weight:normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#pub-summary .checkbox-container label{
+	font-weight:500;
+}
+
+    /* Hide the browser's default checkbox */
+    #pub-summary .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+/* Create a custom checkbox */
+#pub-summary .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#pub-summary .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a background color*/
+#pub-summary .checkbox-container input:checked ~ .checkmark {
+    background-color: #867d79;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#pub-summary .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+#pub-summary .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+#pub-summary .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+#record-count-filters .checkbox-container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Create a custom radio button */
+#record-count-filters .checkbox-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+#record-count-filters .checkbox-container input:checked ~ .checkmark {
+    background-color: #867d79;
+}
+
+#record-count-filters .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+[type="date"] {
+    background: #fff url(../img/calendar.png) 97% 50% no-repeat;
+}
+
+    [type="date"]::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    [type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+/* custom styles */
+#pub-summary input {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    margin-bottom:15px;
+}
+
+#pub-summary .button {
+    background-color: #867d79;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight:bold;
+    margin: 1px 2px;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    float:right;
+}
+
+    #pub-summary .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        cursor: pointer;
+    }
+
+/* Scrollbar styles */
+#pub-summary ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+#pub-summary ::-webkit-scrollbar-track {
+    background: #d0d0d0;
+    border-radius: 10px;
+}
+
+#pub-summary ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #867d79;
+}
+
+    #pub-summary ::-webkit-scrollbar-thumb:hover {
+        background: #999;
+    }
